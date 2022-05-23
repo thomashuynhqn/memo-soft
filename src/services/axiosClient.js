@@ -12,8 +12,7 @@ const axiosClient = axios.create(axiosOptions);
 axiosClient.interceptors.request.use(
   (request) => {
     if (!request.headers.Authorization) {
-      request.headers.Authorization =
-        "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlzQWN0aXZlIjp0cnVlLCJfaWQiOiI2MjJjMTY0MzA2ZmM0NzI1NjhmMjIyNTIiLCJ1c2VySWQiOiJ1c2VyaWRfdXV1dSIsImNvbXBhbnkiOiI2MjJjMTY0MjA2ZmM0NzI1NjhmMjIyMGIiLCJuYW1lIjoixJBvw6BuIDMgMSIsInN1cm5hbWUiOiJEZW1vIiwidXNlck5hbWUiOiJtZW1iZXIzMSIsImVtYWlsQWRkcmVzcyI6Im1lbWJlcjMxQGdtYWlsLmNvbSIsInBob25lTnVtYmVyIjoiMDk2NDIyNTEzMSIsInByb2ZpbGVQaWN0dXJlSWQiOm51bGwsIl9fdiI6MH0sImFjY2Vzc3Rva2VuIjoiNjIzOTU5MmUyZGM3MTc1Zjk1MmU5NzhiIiwiaWF0IjoxNjQ3OTI1NTUwfQ.RgHzJfGQS93C1Hg5tiSW9zOxBHWWLJvTIhOuaxzRtKA";
+      request.headers.Authorization = "Bearer";
     }
     return request;
   },
